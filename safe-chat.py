@@ -3,8 +3,8 @@ import threading
 
 class ChatRoom:
     def __init__(self):
-        self.host = '127.0.0.1'  # آدرس IP محلی
-        self.port = 55555  # پورت برای اتصال
+        self.host = '127.0.0.1'  # Local IP address
+        self.port = 55555  # Port to connect
 
         self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.server.bind((self.host, self.port))
